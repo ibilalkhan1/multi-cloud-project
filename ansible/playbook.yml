@@ -1,0 +1,9 @@
+- name: Baseline Configuration (Demo)
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Print baseline setup message
+      debug:
+        msg: "Baseline config applied: In real infra we install Docker/Nginx/users/firewall on cloud VMs."
